@@ -22,24 +22,6 @@ class _AgregarPasajeroState extends State<AgregarPasajero> {
         leading: Icon(Icons.menu),
       ),
       body: FormularioPasajero(pasajero),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Listar Vuelos'
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              label: 'Listar Pasajeros'
-          ),
-        ],
-        onTap: (int boton) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => AgregarPasajero()),
-          );
-        }
-      ),
     );
   }
 }
